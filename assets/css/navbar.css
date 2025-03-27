@@ -1,0 +1,39 @@
+.global-nav {
+    display: flex;
+    background-color: var(--darkblue);
+    gap: 1rem;
+    padding: 1rem;
+}
+.global-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.global-nav a:hover {
+    color: var(--lightturkish);
+    border: 2px solid turquoise;
+}
+/* Mobile: Column layout (links under hinanden) */
+@media (max-width: 800px) {
+    .global-nav {
+        flex-direction: column;
+        align-items: center; /* Centreret */
+    }
+}
+
+/* Tablet: Column layout (links under hinanden, venstrejusteret) */
+@media (min-width: 800px) and (max-width: 999px) {
+    .global-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Venstrestillet */
+    }
+}
+
+/* Desktop: Row layout (links på række, højrestillet) */
+@media (min-width: 1200px) {
+    .global-nav {
+        flex-direction: row !important;
+        justify-content: flex-end !important; /* Højrestillet */
+        align-items: center;
+    }
+}

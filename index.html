@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- GLOBAL HEADER  -->
+    <header class="global-header">
+        <img src="assets/images/Header-Image.png" alt="Header-Image">
+        <h1><img src="assets/images/Logo.png" alt="Responsive Design"></h1>
+    </header>
+    <!-- GLOBAL NAVIGATION -->
+    <nav class="global-nav">
+            <a href="#mobiledevises">MOBILEDEVISES</a>
+            <a href="#screens">SCREENS</a>
+            <a href="#mediaquaries">MEDIAQUARIES</a>
+            <a href="#mobile-first">MOBILE FIRST</a>
+    </nav>
+    <!-- MAIN CONTENT  -->
+    <main class="main-content">
+        <header><h1>HTML vises også på mobile enheder.</h1></header>
+        <h2>Dit website skal fungere på mobil-enheder, og mindre skærme.</h2>
+        <img src="assets/images/Responsive-Design.png" alt="Responsive Design">
+        <!-- SECTION ONE -->
+        <section class="section-one" id="mobiledevises">
+            <h2>Devices vs Desktop</h2>
+            <!-- ARTICLE ONE  -->
+            <article class="article-one">
+                <p>Omkring 2012 skiftede den andel af enheder der tilgik Internettet og Websites, fra "desktops" (Computere), til mobile enheder (Devices).</p>
+                <p>I dag er det essentielt at din HTML ikke kun virker, men også er nemt at læse og navigere i på Mobile enheder.</p>
+                <p>Computere har oftest et "fysisk skærmområde", altså den faktuelle "størrelse" på minimum 15 tommer, (Inch'es).</p>
+                <p>Mobiltelefoner har på trods en mindre størrelse ofte lige så stor "opløsning" <span class="ARM">(Pixel-tæthed)</span>, altså samme opløsning på mindre område.</p>
+            </article>
+            <h2>Begreber i Responsive Design?</h2>
+           <ul class="list">
+               <li><span  class="ARM">Adaptive:</span> (Groft sagt et “skræddersyet design” til definerede skærmstørrelser)</li>
+               <li><span class="ARM">Responsive:</span> (”flydende” og “device uafhængigt” “Fits all”, ikke så præcist?)</li> 
+               <li><span class="ARM">Mobile First:</span> (“Design strategi” hvor man tager udgangspunkt i Mobile Devices)</li>
+           </ul>
+        </section>
+        <!-- SECTION TWO -->
+        <section class="section-two" id="screens">
+            <h2>Tommer og Pixels?</h2>
+            <p><span class="ARM">Lidt om Skærm-bredder og Viewports.</span></p>
+            <article class="article-two">
+                <p>Skærmbredder er i høj grad afhængig af den udvikling der er i gang på Hardware og specielt Mobil markedet.</p>
+                <p>Mobiltelefoner og tablets kommer i et hav af størrelser og opløsninger, og kan vise HTML og APPs i både "Vandret" og "Lodret".</p>
+                <p>"Pixeltætheden"<span class="ARM"></span>(ppi)</span> er et udtryk for skærmens opløsning, og er ikke et udtryk for den fysiske størrelse. Mobiltelefoner har oftest lige så høj, eller højere "opløsning" end Computerskærme.</p>
+                <section class="Section-SCREEENS">
+                    <div class="SCREEENS-container">
+                        <img class="SCREEENS" src="assets/images/Screen-Desktop.png" alt="Desktop Screen">
+                        <img class="SCREEENS" src="assets/images/Screen-Tablets.png" alt="Tablet Screen">
+                        <img class="SCREEENS" src="assets/images/Screen-Mobile.png" alt="Mobile Screen">
+                    </div>
+                </section>
+                <article>
+                    <h2>Opløsning vs “Screen size”</h2>
+                    <ul class="list">
+                        <li>Mobile Phones: Også kaldt “Small Devices”, Pixel Tæthed omkring <span class="ARM">300ppi</span> eller mere.</li>
+                        <li>Tablets: “Medium Devices”, Pixel Tæthed omkring <span class="ARM">190ppi</span> eller mere.</li>
+                        <li>Desktops: Pixel Tæthed <span class="ARM">72ppi</span> / eller mere. (Macbook Pro Retina 220.53ppi)</li>
+                    </ul>
+                </article>
+            </article>
+        </section>
+        <!-- SECTION THREE -->
+        <section class="section-three" id="mediaquaries">
+            <h2>Mediaqueries</h2>
+            <p><span class="ARM">Om Breakpoints og Devices</span></p>
+            <div class="mediaqueries-image-container">
+                <img class="mediaqueries-image" src="assets/images/Media-Screen.png" alt="Mediaqueries Example">
+            </div>
+            <!-- ARTICLE THREE -->
+            <article class="article-three">
+                <h3>Mediaqueries er en vigtig del af responsivt design, da de hjælper os med at ændre layoutet af en webside afhængig af skærmbredde og andre enhedsegenskaber.</h3>
+                <p>@media screen and (max-width: 800px) Træder i kraft under 800px på din computer skærm.</p>
+                <p>@media screen and (min-width: 800px) Træder i kraft over 800px på din computer skærm.</p>
+                <h3>Meta Viewport?</h3>
+                <p>&#60;meta name="viewport" content="width=device-width, initial-scale=1.0">&#62;</p>
+                <p>Hvis ikke du har “meta viewport” i dit head-tag så vil en nyere mobiltelefon vise dit website ud fra pixel tætheden (ppi) og IKKE “device-width”.</p>
+                <pre>
+                <p>Eksempel (Træder i kraft under 800 Pixels):
+                @media screen and (max-width: 800px) {
+                    body{
+                    background-color: red;
+                    }
+                }</p></pre>
+            </article>
+        </section>
+        <!-- SECTION FOUR -->
+        <section class="section-four" id="mobile-first">
+            <h2>Mobile First</h2>
+            <p>Et udtryk for den “strategi” du bruger når du starter et projekt?</p>
+            <div class="Mobile-First-images">
+                <img src="assets/images/Desktop-First.png" alt="">
+                <img src="assets/images/Mobile-First.png" alt="">
+            </div>
+            <!-- ARTICLE FOUR -->
+            <article class="article-four">
+            <h3>Start “Bagfra”?</h3>
+            <p>Overblikket over det samlede projekt kan godt give udfordringer. Start evt. med “header og menu”?</p>
+            </article>
+        </section>
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="assets/images/Logo.png" alt="">
+            </div>
+            <div class="footer-list">
+                <ul class="links">
+                    <li>Mere om fysiske størrelser: <br><a href="https://screensiz.es/">https://screensiz.es/</a></li>
+                    <li>Mere om Opløsninger: <br><a href="https://www.hobo-web.co.uk/best-screen-size/">https://www.hobo-web.co.uk/best-screen-size/</a></li>
+                    <li>Statcounter: <br><a href="https://gs.statcounter.com/">https://gs.statcounter.com/</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
